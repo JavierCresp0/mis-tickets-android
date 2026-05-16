@@ -1,0 +1,26 @@
+# Built application files
+*.apk
+*.aab
+*.ap_
+*.dex
+
+# Gradle / build
+build/
+.gradle/
+gradle-app.setting
+!gradle-wrapper.jar
+local.properties
+
+# Android Studio / IntelliJ
+.idea/
+*.iml
+captures/
+.navigation/
+.externalNativeBuild/
+.cxx/
+
+# Other
+proguard/
+*.log
+.DS_Store
+Thumbs.db
