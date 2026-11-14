@@ -10,6 +10,12 @@ Aplicación Android nativa para gestionar **tickets de gasto** organizados por *
 - 💾 **Persistencia local con SQLite**: tus datos no se pierden al cerrar la app
 - 🧭 **Navegación entre Activities** con `Intent` y paso de datos
 
+## 📸 Capturas
+
+| Lista de tickets | Nuevo ticket | Categorías | Tickets por categoría | Confirmar borrado |
+|:---:|:---:|:---:|:---:|:---:|
+| <img src="docs/tickets.png" width="170" alt="Lista de tickets"> | <img src="docs/formulario.png" width="170" alt="Formulario de nuevo ticket"> | <img src="docs/categorias.png" width="170" alt="Lista de categorías"> | <img src="docs/por-categoria.png" width="170" alt="Tickets filtrados por categoría"> | <img src="docs/eliminar.png" width="170" alt="Diálogo de confirmación de borrado"> |
+
 ## 🏗️ Arquitectura
 
 ```
