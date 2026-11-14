@@ -10,10 +10,6 @@ Aplicación Android nativa para gestionar **tickets de gasto** organizados por *
 - 💾 **Persistencia local con SQLite**: tus datos no se pierden al cerrar la app
 - 🧭 **Navegación entre Activities** con `Intent` y paso de datos
 
-## 📸 Capturas
-
-<!-- Pendiente añadir capturas de la app en ejecución -->
-
 ## 🏗️ Arquitectura
 
 ```
