@@ -68,6 +68,35 @@ app/src/main/java/es/umh/dadm/mistickets/
 - **JDK 11+**
 - **SDK Android** API 24+
 
+## 🔀 La misma idea en Flutter y React Native
+
+En la siguiente práctica de la asignatura rehice una versión reducida de la app con dos frameworks multiplataforma, para comparar cómo se resuelve lo mismo en cada uno. Están en [`multiplataforma/`](multiplataforma/):
+
+| | Flutter | React Native (Expo) |
+|---|---|---|
+| Carpeta | [`multiplataforma/flutter`](multiplataforma/flutter) | [`multiplataforma/react-native`](multiplataforma/react-native) |
+| Lenguaje | Dart | JavaScript |
+| Pantallas | Alta de ticket · listado | Alta de ticket · cámara · listado |
+| Foto del ticket | `image_picker` (cámara y galería) | `expo-camera` y `expo-image-picker` |
+| Guardado | `tickets.json` con `path_provider` | `tickets.json` con `expo-file-system` |
+| Navegación | `Navigator.push` | React Navigation (*native stack*) |
+
+Las dos hacen lo mismo: fotografiar o elegir la imagen de un ticket, añadirle descripción y categoría, guardarlo en un fichero JSON del dispositivo y mostrar el listado. A diferencia de la app nativa, no usan SQLite ni permiten editar.
+
+```bash
+# Flutter (las carpetas de iOS, web y escritorio se regeneran con el primer comando)
+cd multiplataforma/flutter
+flutter create .
+flutter run
+
+# React Native
+cd multiplataforma/react-native
+npm install
+npx expo start
+```
+
+La [memoria de la práctica](multiplataforma/Memoria.pdf) recoge los problemas encontrados y la comparación entre ambos.
+
 ---
 
 📌 *Práctica final de la asignatura Desarrollo de Aplicaciones para Dispositivos Móviles (DADM) — Universidad Miguel Hernández.*
